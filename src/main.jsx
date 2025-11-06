@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, createHashRouter } from 'react-router-dom';
 import './index.css';
 
 
@@ -12,25 +12,25 @@ import Contacto from './Pages/Contacto/Contacto.jsx';
 import Turismo from './Pages/Turismo/Turismo.jsx';
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-  path: '/mutual-amarillo',
+  path: '/',
   element: <Layout/>,
   children:[
     {
-      path: '/mutual-amarillo',
+      path: '/',
       element: <MainPage/>
     },
     {
-      path: '/mutual-amarillo/nuestra-mutual',
+      path: '/nuestra-mutual',
       element: <NuestraMutual/>
     },
     {
-      path: '/mutual-amarillo/contacto',
+      path: '/contacto',
       element: <Contacto/>
     },
     {
-      path: '/mutual-amarillo/turismo',
+      path: '/turismo',
       element: <Turismo/>
     }
   ]
