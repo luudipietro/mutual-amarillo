@@ -1,5 +1,5 @@
 import React from "react";
-import MemberCard from "../memberOrganigram/MemberOrganigram";
+import MemberCard from "../MemberOrganigram/MemberOrganigram";
 import "./Organigram.css";
 const Organigram = () => {
   return (
