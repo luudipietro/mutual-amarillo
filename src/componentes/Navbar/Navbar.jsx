@@ -8,22 +8,22 @@ const NavbarLinks = [
   {
     id: 1,
     name: "Inicio",
-    link: "/",
+    link: "/mutual-amarillo",
   },
   {
     id: 2,
     name: "Nuestra Mutual",
-    link: "/nuestra-mutual",
+    link: "/mutual-amarillo/nuestra-mutual",
   },
   {
     id: 3,
     name: "Turismo",
-    link: "/turismo",
+    link: "/mutual-amarillo/turismo",
   },
   {
     id: 4,
     name: "Contacto",
-    link: "/contacto",
+    link: "/mutual-amarillo/contacto",
   },
 ];
 const NavbarRedes = [
