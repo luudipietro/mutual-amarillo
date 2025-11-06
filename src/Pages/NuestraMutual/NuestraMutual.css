@@ -1,0 +1,19 @@
+.nosotros__container, .organigrama__container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 22px;
+    
+}
+/* .organigrama{
+    color: rgb(8, 15, 45);
+    background-color: white;
+}
+
+.nosotros{
+    color: white;
+    background-color: rgb(8, 15, 45);
+
+} */

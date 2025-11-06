@@ -1,0 +1,30 @@
+/* src/components/MemberCard.css */
+.member-card {
+  background-color: #f0f0f0; /* Fondo gris claro */
+  border: 1px solid #ddd;   /* Borde suave */
+  border-radius: 4px;       /* Esquinas redondeadas */
+         /* Espaciado interno */
+  text-align: center;       /* Texto centrado */
+  margin: 10px;             /* Espacio entre las tarjetas */
+  min-width: 180px;         /* Ancho mínimo para las tarjetas */
+  flex-grow: 1;             /* Permite que la tarjeta crezca para ocupar espacio */
+  display: flex;            /* Para alinear el texto */
+  flex-direction: column;   /* Pone posición y nombre uno encima del otro */
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* Sombra sutil para un efecto 3D ligero */
+}
+
+.member-card-position {
+  font-weight: bold;
+  margin-bottom: 0; /* Espacio entre posición y nombre */
+  margin-top: 5px;
+  color: #333;
+  font-size: 0.9em;
+}
+
+.member-card-name {
+  color: #555;
+  font-size: 1em;
+  margin: 5px;
+}

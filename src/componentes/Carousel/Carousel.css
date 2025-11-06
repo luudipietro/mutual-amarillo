@@ -1,0 +1,62 @@
+.carousel-father{
+background-color: rgb(8, 15, 45);
+padding-bottom: 20px;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 1600px; /* Ajusta según tus necesidades */
+  margin: 20px auto;
+  overflow: hidden; /* Importante para ocultar las tarjetas que están fuera de vista */
+  position: relative;
+  
+}
+
+.carousel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 15px; /* Pequeño padding para los bordes */
+}
+
+.carousel-header h2 {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+
+.carousel-nav button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  font-size: 1.5em;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-nav button:hover:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.carousel-nav button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.carousel-track-wrapper {
+  overflow: hidden; /* Asegura que solo se vea la parte del track que corresponde */
+  padding: 0 30px; /* Espaciado a los lados del carrusel */
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease-in-out; /* Transición suave para el movimiento */
+  /* Ajustar el ancho del track para que quepan todas las tarjetas */
+  /* Este valor dependerá del número de tarjetas y el ancho de cada una */
+  /* Por ejemplo, si tienes 5 tarjetas y quieres mostrar 3 a la vez,
+     el ancho total del track será 5/3 veces el ancho visible */
+}

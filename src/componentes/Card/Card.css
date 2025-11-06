@@ -1,0 +1,81 @@
+.card {
+    flex: 0 0 calc(100%/3);
+  /* min-width: calc(33.3333% - 20px);  */
+  margin-right: 20px; /* Espaciado entre tarjetas */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Para que el contenido se distribuya */
+  transition: transform 0.3s ease; /* Pequeña animación al interactuar */
+}
+
+.card:last-child {
+  margin-right: 0; /* No hay margen a la derecha de la última tarjeta */
+}
+
+.card-image {
+  width: 100%;
+  height: 350px; /* Altura fija para las imágenes */
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Permite que el contenido se expanda */
+}
+
+.card-content h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.card-content p {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.5;
+}
+
+.card-icon {
+  font-size: 1.5em;
+  margin-top: auto; /* Empuja el icono hacia abajo */
+  align-self: flex-end; /* Alinea el icono a la derecha */
+}
+
+/* Colores de ejemplo para las tarjetas, como en tu imagen */
+.card-tourism {
+  background-color: #e74c3c; /* Rojo */
+  color: white; /* Letras blancas para esta tarjeta */
+}
+.card-tourism .card-content h3, .card-tourism .card-content p, .card-tourism .card-icon {
+  color: white;
+}
+
+.card-subsidies {
+  background-color: #ffffff; /* Blanco */
+  border: 1px solid #eee;
+}
+
+.card-health {
+  background-color: #ffffff; /* Blanco */
+  border: 1px solid #eee;
+}
+
+@media(max-width: 900px){
+.card{
+    flex: 0 0 calc(100%/2);
+}
+}
+
+@media(max-width: 600px){
+.card{
+    flex: 0 0 100%;
+}
+}

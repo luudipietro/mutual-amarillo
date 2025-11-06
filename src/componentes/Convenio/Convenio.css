@@ -1,0 +1,29 @@
+.convenio-image{
+    width: 200px ;
+    height: 200px;
+   
+    
+}
+.convenio{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    /* width: calc(100%/3)  ; */
+    
+}
+
+@media(max-width: 900px){
+    .convenio-image{
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+@media(max-width: 600px){
+    .convenio-image{
+        width: 100px;
+        height: 100px;
+    }
+
+}   
