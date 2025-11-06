@@ -98,9 +98,9 @@ export const Navbar = () => {
         <div className={`${isOpen ? "menu_mobile" : "menu_mobile_escondido"} `}>
           <ul className="links_menu_mobile">
             {NavbarLinks.map((link) => (
-              <li key={link.id}>
-                <a href={link.link}>{link.name}</a>
-              </li>
+              <NavLink to={link.link}>
+                {link.name}
+                </NavLink>
             ))}
           </ul>
 
