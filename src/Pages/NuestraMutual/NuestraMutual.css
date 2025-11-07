@@ -128,7 +128,7 @@
 @media(max-width:600px){
     .nosotros__hero{
   height: 50vh; 
-  padding: 0 5%;
+
 }
     
 .nosotros__hero__container {
@@ -147,6 +147,7 @@
     /* 5. (Opcional) Ocultamos la barra de scroll en los navegadores */
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE y Edge */
+
   }
 
   /* Ocultar barra de scroll en Chrome, Safari y Opera */
