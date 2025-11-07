@@ -1,13 +1,101 @@
 .turismo{
+  position: relative;
     width: 100%;
-  height: 70vh; 
+  height: 50vh; 
   background-size: cover;
   background-position: center;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   color: white;
   padding: 0;
 
+
 }
+.turismo::before {
+    content: ''; /* Obligatorio para pseudo-elementos */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Negro semitransparente (0.5 de opacidad) */
+    z-index: 1; /* Asegura que el overlay esté encima de la imagen */
+}
+
+.turismo__container{
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative; /* Asegura que el contenido esté encima del overlay */
+  z-index: 2; /* Mayor que el z-index del ::before */
+  padding: 20px;
+  
+}
+.turismo__container h1{
+  font-size: 45px;
+}
+.turismo__container p{
+  font-size: 25px;
+}
+
+.turismo_info p{
+  font-size: 22px;
+}
+.turismo_info strong{
+  font-size: 25px;
+}
+
+.turismo_info {
+  max-width: 1600px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 0;
+}
+@media(max-width:1600px){
+  .turismo_info{
+    padding: 0 20px;
+  }
+}
+
+.buttons{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+ 
+  max-width: 300px;
+  gap: 10px;
+  border: 1px solid;
+
+
+}
+.email{
+background-color: #080f17;
+color: white;
+}
+.whatsapp{
+background-color: #51cc5e;
+color: white;
+}
+
+.email:hover{
+background-color: #23456f;
+color: white;
+}
+.whatsapp:hover{
+background-color: #158c21;
+color: white;
+}
+/* .turismo__email-icon{
+  color:#080f17;
+} */

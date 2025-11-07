@@ -1,18 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./NuestraMutual.css";
-
+import Familia from "../../assets/familia_fut.jpg";
+import Nosotros from "../../assets/nosotros.png";
 import Organigram from "../../componentes/Organigram/Organigram";
 
 const NuestraMutual = () => {
+  const [animateText, setAnimateText] = useState(false);
+
+   useEffect(() => {
+      // Resetear animaciones al cambiar de imagen
+      setAnimateText(false);
+  
+      const textTimer = setTimeout(() => {
+        setAnimateText(true);
+      }, 500); // Aparece el texto "BILLETERA MUTUAL CAF" después de 0.5s
+  
+      return () => {
+        clearTimeout(textTimer);
+      };
+    },);
+
   return (
     <>
+      <div
+        className="nosotros__hero"
+        style={{ backgroundImage: `url(${Nosotros})` }}
+      >
+        <div className="nosotros__hero__container">
+          <h1 className="hero-title animate-fade-in">
+            Nuestra Historia
+
+          </h1>
+        </div>
+      </div>
       <div className="container">
         <section className="nosotros">
           <div className="nosotros__container">
             <h1> Sobre nosotros</h1>
             <div>
               <div>
-                <h2>Nuestra Historia</h2>
                 {/* <p>
           La Mutual nace inspirada en más de tres décadas de trabajo, compromiso
           y desarrollo comunitario que dieron forma al Club Educador de Futbol
@@ -62,23 +88,24 @@ const NuestraMutual = () => {
                   escuchar y acompañar. Compromiso social: trabajar por una
                   comunidad más unida y justa.
                 </p> */}
-                  <p>
+                <p>
                   Creemos en los vínculos que se construyen con honestidad y
                   cercanía. Estos son los cinco principios innegociables que
                   guían cada una de nuestras decisiones y acciones:
-                  </p>
-                  <p>● Confianza: La base de todo proyecto que perdura.</p>
-                  <p>
-                    ● Solidaridad: Ayudarnos entre todos para seguir creciendo.
-                  </p>
-                  <p>
-                    ● Transparencia: Cada acción, con responsabilidad y
-                    claridad.
-                  </p>
-                  <p>● Cercanía: Estar presentes, escuchar y acompañar.</p>
-                    <p>● Compromiso social: Trabajar por una comunidad más unida y justa.
-                  </p>
-                  <p>
+                </p>
+                <p>● Confianza: La base de todo proyecto que perdura.</p>
+                <p>
+                  ● Solidaridad: Ayudarnos entre todos para seguir creciendo.
+                </p>
+                <p>
+                  ● Transparencia: Cada acción, con responsabilidad y claridad.
+                </p>
+                <p>● Cercanía: Estar presentes, escuchar y acompañar.</p>
+                <p>
+                  ● Compromiso social: Trabajar por una comunidad más unida y
+                  justa.
+                </p>
+                <p>
                   Es desde esta base de confianza y compromiso arraigado en la
                   comunidad que extendemos una propuesta de valor diseñada para
                   generar un crecimiento tangible y compartido.

@@ -45,7 +45,7 @@ const convenios = [
         id: 8,
         tittle: "Julieta Penovi Interiorismo",
         description: "bla",
-        imageUrl: 'juli_penovi_fix2.png'
+        imageUrl: 'juli_penovi_fix.png'
     },
 
     {
@@ -72,7 +72,31 @@ const convenios = [
         description: "bla",
         imageUrl: 'logo_berro_fix.png'
     },
-      {
+     {
+        id: 13,
+        tittle: "Nueva Italia",
+        description: "bla",
+        imageUrl: 'nueva_italia_fix.png',     
+   },
+     {
+        id: 14,
+        tittle: "Consultora MC",
+        description: "bla",
+        imageUrl: 'mc_consultora_fix.png',     
+   },
+     {
+        id: 15,
+        tittle: "Motok estudio juridico",
+        description: "bla",
+        imageUrl: 'motok_estudio_juridico_fix.png',     
+   },
+     {
+        id: 16,
+        tittle: "Eco Extreme",
+        description: "bla",
+        imageUrl: 'eco_extreme_fix.png',     
+   },
+     {
         id: 5,
         tittle: "Bodega Don Angelo",
         description: "bla",

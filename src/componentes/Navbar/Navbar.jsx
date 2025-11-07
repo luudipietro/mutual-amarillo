@@ -28,17 +28,17 @@ const NavbarLinks = [
 ];
 const NavbarRedes = [
   {
-    id: 1,
+    id: 5,
     link: "#",
     icon: "bi bi-whatsapp",
   },
   {
-    id: 2,
+    id: 6,
     link: "#",
     icon: "bi bi-instagram",
   },
   {
-    id: 3,
+    id: 7,
     link: "#",
     icon: "bi bi-facebook",
   },

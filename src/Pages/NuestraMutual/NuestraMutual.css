@@ -17,3 +17,88 @@
     background-color: rgb(8, 15, 45);
 
 } */
+
+.nosotros__hero{
+  position: relative;
+  width: 100%;
+  height: 70vh; 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0;
+
+
+}
+@media(max-width:900px){
+    .nosotros__hero{
+  height: 50vh; 
+}
+}
+
+.nosotros__hero::before {
+    content: ''; /* Obligatorio para pseudo-elementos */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Negro semitransparente (0.5 de opacidad) */
+    z-index: 1; /* Asegura que el overlay esté encima de la imagen */
+}
+.nosotros__hero__container{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    z-index: 2;
+     position: relative;
+}
+
+.hero-title {
+  transform: translateY(20px);
+  /* Animación será controlada por JS */
+}
+
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(600px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media(max-width:900px){
+    .nosotros__hero{
+  height: 50vh; 
+}
+    .nosotros__hero__container{
+        font-size: 15px;
+    }
+}
+@media(max-width:600px){
+    .nosotros__hero{
+  height: 40vh; 
+}
+    .nosotros__hero__container{
+        font-size: 10px;
+    }
+}

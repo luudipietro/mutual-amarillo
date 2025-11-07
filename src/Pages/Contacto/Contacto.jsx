@@ -3,6 +3,7 @@ import './Contacto.css';
 // Importamos los íconos de Material Design y Bootstrap
 import { MdEmail, MdLocationOn, MdPhone } from 'react-icons/md';
 import { BsWhatsapp, BsInstagram, BsFacebook, BsClock } from 'react-icons/bs';
+import contacto from '../../assets/contacto.jpg'
 
 const Contacto = () => {
   // Estado para manejar los inputs del formulario
@@ -40,32 +41,23 @@ const Contacto = () => {
 //   };
 
   return (
-    <div className="contacto-container">
-      <div className="contacto-header">
+    <>
+    <div className="contacto-hero" style={{backgroundImage: `url(${contacto})`}}>
+      <div className='contacto-hero__container'>
         <h1>Contactate con nosotros</h1>
         <p>Estamos aquí para ayudarte. Dejanos tu consulta y te responderemos a la brevedad.</p>
+        </div>
       </div>
 
+   
+    <div className="contacto-container">
+      
       <div className="contacto-main">
         {/* Columna Izquierda: Información de Contacto y Mapa */}
         <div className="contacto-info">
           <h2>Información de Contacto</h2>
           
-          <div className="info-item">
-            <MdLocationOn className="info-icon" />
-            <div>
-              <strong>Nuestra ubicación</strong>
-              {/* Hice el link para que abra Google Maps con la dirección */}
-              <a 
-                href="https://www.google.com/maps/search/?api=1&query=Belgrano+4397+Planta+Alta+Unidad+5" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                Belgrano 4397, Planta Alta, Unidad 5
-              </a>
-              <p>San Miguel de Tucumán, Tucumán</p>
-            </div>
-          </div>
+          
           <div className="info-item">
           <BsClock className="info-icon" />
             <div>
@@ -73,7 +65,7 @@ const Contacto = () => {
               {/* Hice el link para que abra Google Maps con la dirección */}
               
               <p>Lunes a Viernes</p>
-              <p>9 a 13h a y de 17 a 21h</p>
+              <p>9 a 13h a y de 17:30 a 21h</p>
             </div>
           </div>
 
@@ -109,11 +101,7 @@ const Contacto = () => {
               </a>
             </div>
           </div>
-          </div>
-          <div className='contacto-info'>
 
-          {/* Iconos de Redes Sociales */}
-          <h2>Seguinos</h2>
           <div className="social-icons">
             <a href="URL_DE_TU_INSTAGRAM" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <BsInstagram />
@@ -123,6 +111,25 @@ const Contacto = () => {
             </a>
           </div>
 
+
+
+          </div>
+          <div className='contacto-info'>
+
+          {/* Iconos de Redes Sociales */}
+          <h2>Seguinos</h2>
+
+          <div className="info-item">
+            <MdLocationOn className="info-icon" />
+            <div>
+              <strong>Nuestra ubicación</strong>
+              
+            </div>
+          </div>
+
+
+
+          
           {/* Mapa de Google (opcional pero recomendado) */}
           <div className="mapa-container">
             <iframe
@@ -190,6 +197,7 @@ const Contacto = () => {
         </div> */}
       </div>
     </div>
+     </>
   );
 };
 
