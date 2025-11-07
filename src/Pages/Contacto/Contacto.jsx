@@ -117,7 +117,7 @@ const Contacto = () => {
           <div className='contacto-info'>
 
           {/* Iconos de Redes Sociales */}
-          <h2>Seguinos</h2>
+          <h2>Visitanos</h2>
 
           <div className="info-item">
             <MdLocationOn className="info-icon" />

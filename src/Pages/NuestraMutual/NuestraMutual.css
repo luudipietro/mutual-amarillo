@@ -46,34 +46,49 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Negro semitransparente (0.5 de opacidad) */
+    background-color: rgba(0, 0, 0, 0.0); /* Negro semitransparente (0.5 de opacidad) */
     z-index: 1; /* Asegura que el overlay esté encima de la imagen */
 }
 .nosotros__hero__container{
     width: 100%;
     height: 100%;
-    margin-top: 50px;
     display: flex;
-    justify-content: center;
-    align-items: top;
+    justify-content: space-around;
+    align-items: center;
     z-index: 2;
      position: relative;
+     
 }
 
-.hero-title {
-  transform: translateY(20px);
-  /* Animación será controlada por JS */
-}
 
+.nosotros__hero__container__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.60);
+    width: 40%;
+    height: 70%;
+   
+
+}
+.nosotros__hero__container__item h1{
+    margin: 10px ;
+    text-align: center;
+    font-size:50px ;
+}
+.nosotros__hero__container__item p{
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 30px;
+    text-align: center;
+}
 
 .animate-fade-in {
   animation: fadeIn 1s ease-out forwards;
 }
-
-.animate-slide-up {
-  animation: slideUp 0.8s ease-out forwards;
-}
-
 
 @keyframes fadeIn {
   from {
@@ -88,17 +103,68 @@
 
 @media(max-width:900px){
     .nosotros__hero{
-  height: 50vh; 
+  height: 60vh; 
 }
-    .nosotros__hero__container{
-        font-size: 15px;
-    }
+.nosotros__hero__container__item{
+    height: 85%;
+}
+.nosotros__hero__container__item h1{
+    margin: 5px ;
+    text-align: center;
+    font-size: 40px;
+}
+.nosotros__hero__container__item p{
+    font-size: 18px;
+    margin: 0;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+
 }
 @media(max-width:600px){
     .nosotros__hero{
-  height: 40vh; 
+  height: 50vh; 
 }
-    .nosotros__hero__container{
-        font-size: 10px;
-    }
+    
+.nosotros__hero__container {
+    /* 1. Lo convertimos en un contenedor flexible horizontal */
+    display: flex;
+    
+    /* 2. PERMITIMOS que se pueda deslizar horizontalmente */
+    overflow-x: auto;
+    
+    /* 3. ¡LA MAGIA! Le decimos que se "frene" en cada item */
+    scroll-snap-type: x mandatory;
+    
+    /* 4. Hacemos que el scroll sea suave en navegadores que lo soporten */
+    scroll-behavior: smooth;
+    
+    /* 5. (Opcional) Ocultamos la barra de scroll en los navegadores */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE y Edge */
+  }
+
+  /* Ocultar barra de scroll en Chrome, Safari y Opera */
+  .nosotros__hero__container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .nosotros__hero__container__item {
+    /* 6. Forzamos a que CADA item ocupe el 100% del ancho */
+    flex: 0 0 100%;
+    
+    /* 7. Le decimos al contenedor dónde debe "frenar" */
+    scroll-snap-align: start;
+    
+    /* 8. (Opcional) Agregamos un poco de espacio entre los items */
+    padding: 0 10px;
+    box-sizing: border-box; /* Para que el padding no rompa el 100% */
+  }
+}
+
+
+.nosotros{
+    width: 100%;
+   background-color: rgb(8, 15, 45);
 }
