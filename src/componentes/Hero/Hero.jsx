@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Hero.css"; // Asegúrate de crear este archivo CSS
 import Hero1 from "../../assets/hero_1.png";
 import Hero2 from "../../assets/hero_2.png";
+import { NavLink } from "react-router-dom";
 
 
 const contenido = [
@@ -10,7 +11,8 @@ const contenido = [
     background_image: Hero1,
     tittle: 'MUTUAL SUEÑO AMARILLO',
     description: 'Un espacio de encuentro, apoyo y crecimiento compartido. Nacida desde una historia de trabajo, valores y comunidad, la Mutual Sueño Amarillo abre sus puertas a todos los que creen que los sueños pueden cumplirse juntos',
-    text_button: 'FORMA PARTE'
+    text_button: 'FORMA PARTE',
+    link:'/contacto'
 
   },
   {
@@ -18,7 +20,8 @@ const contenido = [
     background_image: Hero2,
     tittle: 'TURSIMO',
     description: 'Viaja con la mejor financiación y los precios más bajos. No te quedes con las ganas y conocé los destinos increíbles que tenemos para vos',
-    text_button: 'QUIERO VIAJAR'
+    text_button: 'QUIERO VIAJAR',
+    link:'/turismo'
   }
 ]
 
@@ -78,6 +81,7 @@ const HeroSection = () => {
             >
               {contenido[currentImageIndex].description}
             </p>
+            <NavLink to={contenido[currentImageIndex].link}>
             <button
               className={`hero-button ${
                 animateButton ? "animate-slide-up" : ""
@@ -85,6 +89,7 @@ const HeroSection = () => {
             >
               {contenido[currentImageIndex].text_button}
             </button>
+            </NavLink>
           </div>
         </div>
 

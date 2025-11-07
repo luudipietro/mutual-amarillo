@@ -5,7 +5,7 @@ import "./Convenio.css"
 const Convenio = ({ title, imageUrl }) => {
   return (
     <div className="convenio">
-    <a href="#">
+    <a>
       {imageUrl && <img src={`images/${imageUrl}`} alt={title} className="convenio-image" />}
     </a>
     </div>
