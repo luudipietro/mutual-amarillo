@@ -19,7 +19,7 @@ const contenido = [
     id: 2,
     background_image: Hero2,
     tittle: 'TURSIMO',
-    description: 'Viaja con la mejor financiación y los precios más bajos. No te quedes con las ganas y conocé los destinos increíbles que tenemos para vos',
+    description: 'Viaja con los precios más bajos. No te quedes con las ganas y conocé los destinos increíbles que tenemos para vos',
     text_button: 'QUIERO VIAJAR',
     link:'/turismo'
   }
