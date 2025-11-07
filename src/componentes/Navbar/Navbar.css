@@ -41,7 +41,7 @@ ul{
 }
 
 .links__ul a:hover, .redes__ul a:hover{
-   color: #d4ba15;
+   color: #ffeb66;
 }
 
 .redes__ul{
@@ -95,7 +95,9 @@ a{
 .menu_mobile_escondido{
     display: none;
 }
-
+.menu-selected{
+    color: #aea503;
+}
 @media (min-width: 768px){
     .links, .redes{
         display: block;

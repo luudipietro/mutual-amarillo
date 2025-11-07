@@ -114,7 +114,7 @@ const Carousel = ({cards}) => {
     <section className='carousel-father'>
     <div className="carousel-container">
       <div className="carousel-header">
-        <h2>Nuestros Valores</h2>
+        <h1>Nuestros Valores</h1>
         <div className="carousel-nav">
           <button onClick={handlePrev} >
             &lt; {/* Flecha izquierda */}

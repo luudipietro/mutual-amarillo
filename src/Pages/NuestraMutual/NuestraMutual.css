@@ -119,12 +119,16 @@
     padding: 5px 20px;
     text-align: center;
 }
+.nosotros__container h2{
+    font-size: 40px;
+}
 
 
 }
 @media(max-width:600px){
     .nosotros__hero{
   height: 50vh; 
+  padding: 0 5%;
 }
     
 .nosotros__hero__container {
@@ -152,19 +156,27 @@
   
   .nosotros__hero__container__item {
     /* 6. Forzamos a que CADA item ocupe el 100% del ancho */
-    flex: 0 0 100%;
+    flex: 0 0 90%;
     
     /* 7. Le decimos al contenedor dónde debe "frenar" */
     scroll-snap-align: start;
-    
+
     /* 8. (Opcional) Agregamos un poco de espacio entre los items */
+    margin: 0 5%;
     padding: 0 10px;
     box-sizing: border-box; /* Para que el padding no rompa el 100% */
   }
+  .nosotros__container h2{
+    font-size: 30px;
+}
 }
 
 
 .nosotros{
     width: 100%;
    background-color: rgb(8, 15, 45);
+}
+
+.nosotros__container h2{
+    font-size: 50px;
 }

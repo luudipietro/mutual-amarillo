@@ -2,19 +2,14 @@ import React from "react";
 const NavbarRedes = [
   {
     id: 1,
-    link: "#",
+    link: "https://wa.me/5493812116964",
     icon: "bi bi-whatsapp",
   },
   {
     id: 2,
-    link: "#",
+    link: "https://www.instagram.com/mutualsaoficial?igsh=MXY2b3czMjlraHAxbA==",
     icon: "bi bi-instagram",
-  },
-  {
-    id: 3,
-    link: "#",
-    icon: "bi bi-facebook",
-  },
+  }
 ];
 
 const Ul_redes = (props) => {
@@ -22,7 +17,9 @@ const Ul_redes = (props) => {
     <ul className={props.nombre_clase}>
       {NavbarRedes.map((link) => (
         <li key={link.id}>
-          <a href={link.link}>
+          <a href={link.link}
+          target="_blank" 
+          rel="noopener noreferrer">
             <i className={`${link.icon}`}></i>
           </a>
         </li>

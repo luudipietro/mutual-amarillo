@@ -93,22 +93,24 @@ const Contacto = () => {
             <div>
               <strong>WhatsApp</strong>
               <a 
-                href="https://wa.me/5493812116964" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href='https://wa.me/5493812116964'
+                target="_blank" rel="noopener noreferrer" aria-label="Whatsapp"
               >
                 +54 9 381 211 6964
               </a>
             </div>
           </div>
 
-          <div className="social-icons">
-            <a href="URL_DE_TU_INSTAGRAM" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <BsInstagram />
-            </a>
-            <a href="URL_DE_TU_FACEBOOK" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <BsFacebook />
-            </a>
+          <div className="info-item">
+            
+              <BsInstagram className='info-icon' />
+              <div>
+              <strong>Instagram</strong>
+              <a href="https://www.instagram.com/mutualsaoficial?igsh=MXY2b3czMjlraHAxbA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              @mutualsaoficial
+              </a>
+              </div>
+          
           </div>
 
 

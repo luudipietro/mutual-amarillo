@@ -57,13 +57,13 @@ export const Navbar = () => {
     <nav>
       <div className="navbar">
         <div>
-          <a href="/">
+          <NavLink to="/">
           <img
             className="logo"
             src={Logo}
             alt="Logo de la mutual sueño amarillo"
           />
-          </a>
+          </NavLink>
         </div>
 
         {/* Boton hamburguesa */}
@@ -80,7 +80,7 @@ export const Navbar = () => {
           <ul className="links__ul">
             {NavbarLinks.map((link) => (
               <li key={link.id}>
-                <NavLink to={link.link}>
+                <NavLink to={link.link} className={ ({ isActive }) => ( isActive ? 'menu-selected' : '' ) }>
                 {link.name}
                 </NavLink>
               </li>
@@ -98,9 +98,12 @@ export const Navbar = () => {
         <div className={`${isOpen ? "menu_mobile" : "menu_mobile_escondido"} `}>
           <ul className="links_menu_mobile">
             {NavbarLinks.map((link) => (
+              <li key={link.id}>
               <NavLink to={link.link}>
                 {link.name}
                 </NavLink>
+              </li>
+            
             ))}
           </ul>
 

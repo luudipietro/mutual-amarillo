@@ -1,6 +1,6 @@
 import React from "react";
 import "./NuestraMutual.css";
-import Familia from "../../assets/familia_fut.jpg";
+
 import Nosotros from "../../assets/nosotros.png";
 import Organigram from "../../componentes/Organigram/Organigram";
 import Carousel from '../../componentes/Carousel/Carousel'

@@ -17,13 +17,12 @@ padding-bottom: 20px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  padding: 0 15px; /* Pequeño padding para los bordes */
+  padding: 0 0px; /* Pequeño padding para los bordes */
 }
 
-.carousel-header h2 {
-  font-size: 2em;
-  font-weight: bold;
+.carousel-header h1 {
   color: white;
+  font-size: 50px;
 }
 
 .carousel-nav button {
@@ -59,4 +58,22 @@ padding-bottom: 20px;
   /* Este valor dependerá del número de tarjetas y el ancho de cada una */
   /* Por ejemplo, si tienes 5 tarjetas y quieres mostrar 3 a la vez,
      el ancho total del track será 5/3 veces el ancho visible */
+}
+@media(max-width: 900px){
+.carousel-header h1{
+font-size: 40px;
+}
+
+.carousel-nav button{
+  font-size: 1.2em ;
+}
+}
+@media(max-width: 600px){
+.carousel-header h1{
+font-size: 30px;
+}
+
+.carousel-nav button{
+  font-size: 0.8em ;
+}
 }

@@ -56,10 +56,26 @@ const Organigram = () => {
       {/* Espaciador/Divisor */}
       <div className="organigram-spacer"></div>
       {/* Título para Puestos de trabajo */}
-      <h3 className="organigram-junta-title">Empleados</h3>
+      {/* <h3 className="organigram-junta-title">Empleados</h3> */}
       <div className="organigram-section level-1">
         <MemberCard position="Gerente" name="Ceccotti Nicolás Alfredo" />
       </div>
+      <div className="organigram-section level-1">
+        <MemberCard position="Gerente de Convenios" name="Ceccotti Martin" />
+        <MemberCard position="Gerente de Marketing" name="Di Pietro Fabrizio" />
+        <MemberCard position="Relaciones Corporativas" name="Tavella Diego" />
+      </div>
+
+        {/* Espaciador/Divisor */}
+      <div className="organigram-spacer"></div>
+      {/* Título para Puestos de trabajo */}
+      <h3 className="organigram-junta-title">Asesoría Legal</h3>
+      <div className="organigram-section level-1">
+        <MemberCard position="Abogada" name="Dra. Maria Eugenia Olivera" />
+        <MemberCard position="Abogada" name="Dra. Andrea Karina Martin" />
+      </div>
+      
+      
     </div>
   );
 };
