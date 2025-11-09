@@ -72,11 +72,43 @@ const convenios = [
         description: "bla",
         imageUrl: 'logo_berro_fix.png'
     },
+    {
+        id: 5,
+        tittle: "Bodega Don Angelo",
+        description: "bla",
+        imageUrl: 'bodega_angelo_fix.png',     
+   },
      {
         id: 13,
         tittle: "Nueva Italia",
         description: "bla",
         imageUrl: 'nueva_italia_fix.png',     
+   },
+
+   {
+        id: 17,
+        tittle: "Electrus",
+        description: "bla",
+        imageUrl: 'electrus_fix.png',   
+   },
+   {
+        id: 18,
+        tittle: "Grilx",
+        description: "bla",
+        imageUrl: 'grilx_fix.png',   
+   },
+   {
+        id: 19,
+        tittle: "La casa del ventilador",
+        description: "bla",
+        imageUrl: 'casa_ventilador_fix.png',   
+   },
+     
+   {
+        id: 20,
+        tittle: "La casa del ventilador",
+        description: "bla",
+        imageUrl: 'mix_fix.png',   
    },
      {
         id: 14,
@@ -95,12 +127,6 @@ const convenios = [
         tittle: "Eco Extreme",
         description: "bla",
         imageUrl: 'eco_extreme_fix.png',     
-   },
-     {
-        id: 5,
-        tittle: "Bodega Don Angelo",
-        description: "bla",
-        imageUrl: 'bodega_angelo_fix.png',     
    }
 ]
 
