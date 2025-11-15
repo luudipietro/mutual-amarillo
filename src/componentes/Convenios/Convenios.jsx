@@ -78,12 +78,12 @@ const convenios = [
         description: "bla",
         imageUrl: 'bodega_angelo_fix.png',     
    },
-     {
-        id: 13,
-        tittle: "Nueva Italia",
-        description: "bla",
-        imageUrl: 'nueva_italia_fix.png',     
-   },
+//      {
+//         id: 13,
+//         tittle: "Nueva Italia",
+//         description: "bla",
+//         imageUrl: 'nueva_italia_fix.png',     
+//    },
 
    {
         id: 17,
@@ -106,7 +106,7 @@ const convenios = [
      
    {
         id: 20,
-        tittle: "La casa del ventilador",
+        tittle: "Mix tecno",
         description: "bla",
         imageUrl: 'mix_fix.png',   
    },
@@ -122,13 +122,32 @@ const convenios = [
         description: "bla",
         imageUrl: 'motok_estudio_juridico_fix.png',     
    },
-     {
-        id: 16,
-        tittle: "Eco Extreme",
-        description: "bla",
-        imageUrl: 'eco_extreme_fix.png',     
-   }
+   {
+      id: 16,
+      tittle: "Eco Extreme",
+      description: "bla",
+      imageUrl: 'eco_extreme_fix.png',     
+   },
+   {
+      id: 21,
+      tittle: "Domenico",
+      description: "bla",
+      imageUrl: 'domenico_fix.png',     
+   },
+   {
+      id: 22,
+      tittle: "Malala",
+      description: "bla",
+      imageUrl: 'malala_fix.png',     
+   },
+   {
+      id: 23,
+      tittle: "JMA tecno partes",
+      description: "bla",
+      imageUrl: 'jma_tecno_fix.png',     
+   },
 ]
+
 
 const Convenios = () => {
   return (
