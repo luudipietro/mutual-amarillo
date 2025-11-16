@@ -99,7 +99,11 @@ export const Navbar = () => {
           <ul className="links_menu_mobile">
             {NavbarLinks.map((link) => (
               <li key={link.id}>
-              <NavLink to={link.link}>
+              <NavLink 
+              to={link.link} 
+              className={ ({ isActive }) => ( isActive ? 'menu-selected' : '' )}
+              onClick={toggleMenu}
+              >
                 {link.name}
                 </NavLink>
               </li>

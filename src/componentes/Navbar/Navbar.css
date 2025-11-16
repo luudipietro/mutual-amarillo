@@ -40,7 +40,7 @@ ul{
 
 }
 
-.links__ul a:hover, .redes__ul a:hover{
+.links__ul a:hover, .redes__ul a:hover, .links_menu_mobile a:hover{
    color: #ffeb66;
 }
 
