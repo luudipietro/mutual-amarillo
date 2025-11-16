@@ -160,16 +160,11 @@
 
 }
   .contacto-info{
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
 }
 }
-@media(max-width: 900px){
-  .contacto-info{
-  width: 80%;
-  
-}
-}
+
 /* --- Formulario (Derecha) --- */
 /* .contacto-form form {
   display: flex;

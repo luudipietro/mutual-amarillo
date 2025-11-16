@@ -53,10 +53,32 @@ footer i{
     color: red;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     .footer{
         flex-direction: column;
         align-items: center;
+        
     }
-    
+    .footer__logo{
+        text-align: center;
+    }
+    .footer_redes{
+        justify-content: space-around;
+    }
+     
+}
+@media (max-width: 900px) {
+    .footer{
+        flex-direction: column;
+        
+        width: 80%;
+    }
+    .footer__texto{
+        max-width: 100%;
+        
+    }
+    .footer_redes{
+        justify-content: space-around;
+    }
+     
 }
