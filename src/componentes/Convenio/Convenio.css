@@ -1,8 +1,15 @@
 .convenio-image{
     width: 200px ;
     height: 200px;
+    transform: translateZ(0);
+    backface-visibility: hidden;
    
     
+}
+
+.convenio-image {
+  image-rendering: -webkit-optimize-contrast; /* Para navegadores WebKit como Chrome/Safari */
+  image-rendering: crisp-edges;
 }
 .convenio{
     display: flex;
