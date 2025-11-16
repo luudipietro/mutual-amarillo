@@ -57,6 +57,7 @@ footer i{
     .footer{
         flex-direction: column;
         align-items: center;
+        font-size: 18px;
         
     }
     .footer__logo{

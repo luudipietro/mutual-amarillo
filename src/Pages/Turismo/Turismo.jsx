@@ -1,6 +1,7 @@
 import React, {NavLink} from "react";
 import hero from "../../assets/hero_4.jpg";
 import "./Turismo.css";
+import TurismoLogo from '../../assets/logo_turismo_blanco.png';
 import { BsWhatsapp, BsInstagram, BsFacebook, BsClock } from 'react-icons/bs';
 import { MdEmail, MdLocationOn, MdPhone } from 'react-icons/md';
 
@@ -10,7 +11,7 @@ const Turismo = () => {
     <div>
       <section className="turismo" style={{ backgroundImage: `url(${hero})` }}>
         <div className="turismo__container">
-          <h1>Viaja con la mutual Sueño Amarillo</h1>
+          <img src={TurismoLogo} alt="" />
           <p>30 Años de experiencia nos avalan.</p>
           <p>Los mejores destinos, al mejor precio.</p>
         </div>
@@ -25,6 +26,7 @@ const Turismo = () => {
             accesibles, paquetes pensados para vos, financiación flexible y
             seguros que te brindan tranquilidad en todo momento.
           </p>
+          
           {/* <p>
             Además, al afiliarte a nuestra mutual —un espacio abierto para
             cualquier persona que desee ser parte— podés acceder a beneficios
@@ -37,9 +39,12 @@ const Turismo = () => {
           <strong>
             Tu nueva aventura empieza acá.
           </strong>
+          <p>
+            Escribinos en mutualsa.turismo@gmail.com 
+          </p>
         </div>
         <div className="buttons">
-          <a className="button email" href="mailto:mutualsuenoamarillo@gmail.com">
+          <a className="button email" href="mailto:mutualsa.turismo@gmail.com">
             Contactate por email
             <MdEmail className="turismo__email-icon" />
                         
