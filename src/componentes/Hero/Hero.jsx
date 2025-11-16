@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./Hero.css"; // Asegúrate de crear este archivo CSS
 import Hero1 from "../../assets/hero_1.png";
 import Hero2 from "../../assets/hero_2.png";
-import TurismoLogo from '../../assets/logo_turismo_fix.png';
-import MutualLogo from '../../assets/logo_mutual_sin_fondo.png';
+import TurismoLogo from '../../assets/logo_turismo_blanco.png';
+import MutualLogo from '../../assets/logo_mutual_blanco.png';
 import { NavLink } from "react-router-dom";
 
 
