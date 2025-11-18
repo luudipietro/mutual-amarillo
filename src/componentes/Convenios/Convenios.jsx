@@ -52,7 +52,7 @@ const convenios = [
         id: 9,
         tittle: "Laboratorios Presti",
         description: "bla",
-        imageUrl: 'presti_lab_fix.png'
+        imageUrl: 'presti_lab_fix.jpg'
     },
     {
         id: 10,
@@ -64,7 +64,7 @@ const convenios = [
         id: 11,
         tittle: "SV Baterias",
         description: "bla",
-        imageUrl: 'sv_baterias_fix.png'
+        imageUrl: 'sv_baterias_fix.jpg'
     },
     {
         id: 12,
@@ -76,7 +76,7 @@ const convenios = [
         id: 5,
         tittle: "Bodega Don Angelo",
         description: "bla",
-        imageUrl: 'bodega_angelo_fix.png',     
+        imageUrl: 'bodega_angelo_fix.jpg',     
    },
 //      {
 //         id: 13,
@@ -114,19 +114,19 @@ const convenios = [
         id: 14,
         tittle: "Consultora MC",
         description: "bla",
-        imageUrl: 'mc_consultora_fix.png',     
+        imageUrl: 'mc_consultora_fix.jpg',     
    },
      {
         id: 15,
         tittle: "Motok estudio juridico",
         description: "bla",
-        imageUrl: 'motok_estudio_juridico_fix.png',     
+        imageUrl: 'motok_estudio_juridico_fix.jpg',     
    },
    {
       id: 16,
       tittle: "Eco Extreme",
       description: "bla",
-      imageUrl: 'eco_extreme_fix.png',     
+      imageUrl: 'eco_extreme_fix.jpg',     
    },
    {
       id: 21,
@@ -144,7 +144,7 @@ const convenios = [
       id: 23,
       tittle: "JMA tecno partes",
       description: "bla",
-      imageUrl: 'jma_tecno_fix.png',     
+      imageUrl: 'jma_tecno_fix.jpg',     
    },
     {
       id: 24,
