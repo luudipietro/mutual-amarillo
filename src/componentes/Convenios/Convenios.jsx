@@ -150,7 +150,7 @@ const convenios = [
       id: 24,
       tittle: "ARN Lubricentro",
       description: "bla",
-      imageUrl: 'lubricentro_fix.png',     
+      imageUrl: 'lubricentro_fix.jpg',     
    }
 ]
 
