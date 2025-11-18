@@ -7,10 +7,13 @@
    
     
 }
-.convenio a{
-    -webkit-tap-highlight-color: transparent;
+.convenio a:focus,
+.convenio a:active
+{
+    outline: none;
+    background: transparent;
 }
-.convenio-image {
+.convenio-image{
   image-rendering: -webkit-optimize-contrast; /* Para navegadores WebKit como Chrome/Safari */
   image-rendering: crisp-edges;
 }
