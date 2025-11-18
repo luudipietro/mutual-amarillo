@@ -40,7 +40,7 @@ const Turismo = () => {
             Tu nueva aventura empieza acá.
           </strong>
           <p>
-            Escribinos en mutualsa.turismo@gmail.com 
+            Escribinos en mutualsuenoamarillo@gmail.com 
           </p>
         </div>
         <div className="buttons">
