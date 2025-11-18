@@ -14,7 +14,7 @@ const convenios = [
         id: 2,
         tittle: "Nutricion: Tamara Petrella",
         description: "bla",
-        imageUrl: 'tamara_nutri_fix.png'
+        imageUrl: 'tamara_nutri_fix.jpg '
     },
     {
         id: 3,
