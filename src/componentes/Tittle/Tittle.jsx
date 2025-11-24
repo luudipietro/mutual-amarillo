@@ -5,7 +5,7 @@ const Tittle = () => {
   return (
     <section className='Name'>
       <div className='Name__contenedor'>
-        <h1>Mutual sueño amarillo de los miembros de los clubes deportivos 
+        <h1>MUTUAL SUEÑO AMARILLO DE LOS MIEMBROS DE LOS CLUBES DEPORTIVOS
         </h1>
         </div>
     </section>
