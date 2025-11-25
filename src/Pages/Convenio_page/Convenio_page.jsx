@@ -196,7 +196,7 @@ const listaComercios = [
         id: 18,
         empresa: "Academia ingresar",
         servicio: "Preparación para Ingreso a la Policía: Brinda formación teórica y acondicionamiento físico especializado para postulantes a fuerzas policiales.",
-        beneficio: "Si sos alumno de la academia, contás con todos los beneficios de la mutual (presumiblemente Sueño Amarillo).",
+        beneficio: "Si sos alumno de la academia, contás con todos los beneficios de la mutual Sueño Amarillo.",
         telefono: 3813585211,
         instagram: "academia.ingresar",
         direccion: "Haiti 96",
