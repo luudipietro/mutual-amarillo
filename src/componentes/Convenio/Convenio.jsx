@@ -1,13 +1,15 @@
 import React from 'react'
 import "./Convenio.css"
+import { Link } from 'react-router-dom'
 
 
-const Convenio = ({ title, imageUrl }) => {
+const Convenio = ({id, title, imageUrl }) => {
+  const ruta_base = '/beneficios';
   return (
     <div className="convenio">
-    <a>
+    <Link to={`${ruta_base}/${id}`}>
       {imageUrl && <img src={`images/${imageUrl}`} alt={title} className="convenio-image" />}
-    </a>
+    </Link>
     </div>
 
   )

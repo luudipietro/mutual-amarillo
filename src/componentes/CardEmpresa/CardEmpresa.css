@@ -12,14 +12,14 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #fff;
+  background-color: transparent;
   font-family: Arial, sans-serif;
 }
 
 .imageContainer {
   max-width: 400px;
   margin-bottom: 15px;
-  background-color: #f9f9f9; /* Fondo gris si no hay imagen */
+  background-color: transparent; /* Fondo gris si no hay imagen */
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -40,6 +40,7 @@
 }
 
 .service {
+    width: 80%;
   color: #555;
   font-size: 1.1rem;
   margin-bottom: 20px;
@@ -47,47 +48,61 @@
 }
 
 .benefitBox {
-  background-color: #e8fde3;
-  color: #11a701;
+    display: block;
+  background-color: rgba(8, 15, 45, 0.849);
+  color: rgb(255, 255, 255);
   padding: 12px;
   border-radius: 8px;
-  width: 100%;
+  width: 60%;
   margin-bottom: 15px;
   font-size: 1.2rem;
   box-sizing: border-box; /* Para que el padding no rompa el ancho */
 }
-
+/*#8d8100*/
+/*#fcfde3*/
 .contactSection {
-  width: 100%;
+  width: 60%;
+  border-radius: 8px;
+  background-color: #fcfde3;
   border-top: 1px solid #eee;
   padding-top: 15px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 20px;
+  padding-bottom: 20px;
   font-size: 1.1rem;
-  color: #444;
+  color: #585104;
 }
 
 .link {
   text-decoration: none;
-  /* color: #e1306c; */
+  color: #585104;
   font-weight: bold;
 }
-.boton_volver{
-    margin: 30px 0;
-    text-decoration: underline;
-    color: purple;
+.link i, .contactSection i{
+    color: #585104;
 }
-
+.boton_volver{
+     background-color: rgba(8, 15, 45, 0.849);
+  color: rgb(255, 255, 255);
+    margin: 30px 0;
+    font-size: 1.1rem;
+    min-width: 60%;
+    padding:5px 0px;
+    
+    cursor: pointer;
+    border-radius: 8px;
+}
+/* 
 .service, .benefitBox{
     width: 60%;
-}
+} */
 
-@media(max-width:900px){
+@media(max-width:768px){
  
 
-.service, .benefitBox{
-    width: 80%;
+.service, .benefitBox, .contactSection{
+    width: 90%;
 }      
        
 }

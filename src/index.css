@@ -1,5 +1,7 @@
 @import 'bootstrap-icons/font/bootstrap-icons.css';
-
+:root{
+    --color-azul-mutual: rgb(8, 15, 45);
+}
 body{
     margin: 0 auto;
     background-color: white;

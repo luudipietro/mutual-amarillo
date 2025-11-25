@@ -25,7 +25,7 @@ const listaComercios = [
         instagram: "tamypetrella",
         direccion: "Aconquija 941",
         web: null,
-        imagen: 'tamara_nutri_fix.jpg '
+        imagen: 'tamara_nutri_fix.png '
     },
     {
         id: 3,
@@ -58,7 +58,7 @@ const listaComercios = [
         instagram: "eccoaventuras.xtreme",
         direccion: "Pasaje Pizarro 818",
         web: null,
-        imagen: 'eco_extreme_fix.jpg'
+        imagen: 'eco_extreme_fix.png'
     },
     {
         id: 6,
@@ -80,7 +80,7 @@ const listaComercios = [
         instagram: "laboratoriopresti ",
         direccion: "Av. solano vera 53, local 1, yb/ Lamadrid 612 SMT/ Marcos paz 646, SMT",
         web: "www.laboratoriopresti.com.ar",
-        imagen: 'presti_lab_fix.jpg'
+        imagen: 'presti_lab_fix.png'
     },
     {
         id: 8,
@@ -95,14 +95,14 @@ const listaComercios = [
     },
     {
         id: 9,
-        empresa: "Baterías lobo",
+        empresa: "SV Baterias",
         servicio: "Comercialización y Colocación de Baterías: Venta de baterías para vehículos y servicio de instalación en el momento.",
         beneficio: "Descuento directo del 10% sobre el precio de venta al público de las baterías.",
         telefono: 3815897166,
         instagram: "baterias.sv",
         direccion: "Avenida colon 802",
         web: null,
-        imagen: 'sv_baterias_fix.jpg'
+        imagen: 'sv_baterias_fix.png'
     },
     {
         id: 10,
@@ -124,7 +124,7 @@ const listaComercios = [
         instagram: "bodegadonangelo",
         direccion: null,
         web: null,
-        imagen: 'bodega_angelo_fix.jpg'
+        imagen: 'bodega_angelo_fix.png'
     },
     {
         id: 12,
@@ -132,7 +132,7 @@ const listaComercios = [
         servicio: "Restaurante de Comida Rápida (Hamburguesería): Establecimiento dedicado a la venta de hamburguesas y otros productos de gastronomía rápida.",
         beneficio: "Descuento del 18% sobre el precio final de los productos al público.",
         telefono: 3815325347,
-        instagram: "pedigriix",
+        instagram: "pedigrilx",
         direccion: "Avenida sarmiento 183",
         web: null,
         imagen: 'grilx_fix.png'
@@ -157,19 +157,19 @@ const listaComercios = [
         instagram: "josetecnopartes2025",
         direccion: "Cordoba 678/paseo cordoba local 21/22",
         web: null,
-        imagen: 'jma_tecno_fix.jpg'
+        imagen: 'jma_tecno_fix.png'
     },
-    {
-        id: 15,
-        empresa: "Salon Nueva italia",
-        servicio: "Alquiler de Salón para Eventos Sociales: Espacio equipado con mobiliario (mesas y sillas), parrilla y vajilla para la realización de fiestas y celebraciones.",
-        beneficio: "Descuento del 15% aplicado sobre el precio total del alquiler del salón al público.",
-        telefono: 3812166829,
-        instagram: "nuevaitaliaeventos",
-        direccion: "Italia 4767",
-        web: null,
-        imagen: 'nueva_italia_fix.png'
-    },
+    // {
+    //     id: 15,
+    //     empresa: "Salon Nueva italia",
+    //     servicio: "Alquiler de Salón para Eventos Sociales: Espacio equipado con mobiliario (mesas y sillas), parrilla y vajilla para la realización de fiestas y celebraciones.",
+    //     beneficio: "Descuento del 15% aplicado sobre el precio total del alquiler del salón al público.",
+    //     telefono: 3812166829,
+    //     instagram: "nuevaitaliaeventos",
+    //     direccion: "Italia 4767",
+    //     web: null,
+    //     imagen: 'nueva_italia_fix.png'
+    // },
     {
         id: 16,
         empresa: "Domenico eventos",
@@ -185,7 +185,7 @@ const listaComercios = [
         id: 17,
         empresa: "Malala",
         servicio: "Salón de Estética y Belleza: Establecimiento que ofrece servicios relacionados con el cuidado personal y tratamientos estéticos.",
-        beneficio: "30% de descuento sobre el precio total al pagar usando el CÓDIGO sueñoamarillo (presumiblemente asociado a la mutual).",
+        beneficio: "30% de descuento sobre el precio total al pagar usando el CÓDIGO sueñoamarillo.",
         telefono: 3812393260,
         instagram: "malalaclubdebelleza",
         direccion: "Corrientes 1677 - moreno 107  (mercato) yerba buena ",
@@ -245,7 +245,7 @@ const listaComercios = [
         instagram: "arnlubricentro",
         direccion: "Avenida america 528",
         web: null,
-        imagen: 'lubricentro_fix.jpg'
+        imagen: 'lubricentro_fix.png'
     },
     {
         id: 23,
@@ -256,7 +256,18 @@ const listaComercios = [
         instagram: null,
         direccion: null,
         web: null,
-        imagen: 'mc_consultora_fix.jpg'
+        imagen: 'mc_consultora_fix.png'
+    },
+    {
+        id: 24,
+        empresa: "Lomas Aberturas",
+        servicio: "Carpintería de Aluminio - Aberturas de aluminio que transforman tus espacios",
+        beneficio: "Descuentos Especiales",
+        telefono: 3815302992,
+        instagram: "lomas_aberturas_aluminio",
+        direccion: null,
+        web: null,
+        imagen: 'lomas_aberturas_fix.png'
     }
 ];
 const Convenio_page= () => {
