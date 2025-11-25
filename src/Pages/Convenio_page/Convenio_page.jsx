@@ -207,7 +207,7 @@ const listaComercios = [
         id: 19,
         empresa: "Electrus",
         servicio: "Comercialización de Electrodomésticos: Venta minorista de una amplia gama de artefactos eléctricos para el hogar.",
-        beneficio: "Se aplica un 15% de descuento en la compra de cualquiera de los electrodomésticos.",
+        beneficio: "Se aplica un 15% de descuento en la compra de cualquiera de los electrodomésticos. *Tope de Descuento: $40.000*",
         telefono: 3816795369,
         instagram: "electrustucuman",
         direccion: "San Martin 991",
