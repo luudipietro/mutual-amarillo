@@ -29,6 +29,11 @@ const convenios = [
         imageUrl: 'eco_extreme_fix.jpg'
     },
     {
+        id: 25,
+        tittle: "Overall Center Gym",
+        imageUrl: 'overall.png'
+    },
+    {
         id: 6,
         tittle: "Julieta Penovi Interiorismo",
         imageUrl: 'juli_penovi_fix.png'

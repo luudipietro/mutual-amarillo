@@ -268,6 +268,17 @@ const listaComercios = [
         direccion: null,
         web: null,
         imagen: 'lomas_aberturas_fix.png'
+    },
+    {
+        id: 25,
+        empresa: "Overall Center Gym",
+        servicio: "Cadena de Gimnasios - 10 puntos para vos - 3 Sedes 24hs",
+        beneficio: "15% de descuento en tu cuota mensual",
+        telefono: 3814726106,
+        instagram: "overallcentergym",
+        direccion: null,
+        web: null,
+        imagen: 'overall.jpeg'
     }
 ];
 const Convenio_page= () => {

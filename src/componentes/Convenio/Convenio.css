@@ -3,7 +3,12 @@
     height: 200px;
     
 }
-
+.black{
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    border-radius: 45%;
+}
 
 .convenio{
     display: flex;
@@ -18,11 +23,19 @@
         width: 150px;
         height: 150px;
     }
+    .black{
+        width: 100px;
+        height: 100px;
+    }
 
 }
 
 @media(max-width: 600px){
     .convenio-image{
+        width: 100px;
+        height: 100px;
+    }
+    .black{
         width: 100px;
         height: 100px;
     }

@@ -8,7 +8,7 @@ const Convenio = ({id, title, imageUrl }) => {
   return (
     <div className="convenio">
     <Link to={`${ruta_base}/${id}`}>
-      {imageUrl && <img src={`images/${imageUrl}`} alt={title} className="convenio-image" />}
+      {imageUrl && <img src={`images/${imageUrl}`} alt={title} className={`convenio-image ${id == 25 ? 'black' : ''}`} />}
     </Link>
     </div>
 
