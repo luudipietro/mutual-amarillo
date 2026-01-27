@@ -1,6 +1,7 @@
 import React from 'react'
 import Convenio from '../Convenio/Convenio'
 import "./Convenios.css"
+import { Link, NavLink } from 'react-router-dom'
 const convenios = [
     {
         id: 1,
@@ -129,8 +130,9 @@ const Convenios = () => {
   return (
     <section className='convenios'>
 
-
+        <h3> Nuestros Convenios - <a href="https://socios.mutualsueñoamarillo.com"  target="_blank" rel="noopener noreferrer">Ver Todos los Beneficios</a></h3>
         <div className='convenios__contenedor'>
+            
             {convenios.map((element) => (
             <Convenio
                 key={element.id}
