@@ -279,6 +279,39 @@ const listaComercios = [
         direccion: null,
         web: null,
         imagen: 'overall.jpeg'
+    },
+     {
+        id: 28,
+        empresa: "Simplifica Tu Fiesta",
+        servicio: " Decoradora de eventos Infantiles, adultos y corporativos",
+        beneficio: "10% de descuento en el servicio.",
+        telefono: 3814801998,
+        instagram: "simplificatufiesta.tuc",
+        direccion: null,
+        web: null,
+        imagen: 'simplifica.jpeg'
+    },
+     {
+        id: 26,
+        empresa: "Flor de Hibiscus - Aromatica",
+        servicio: "Acercan toda la línea Saphirus y mucho mas",
+        beneficio: "10% de descuento en tu compra",
+        telefono: null,
+        instagram: "florde_hibiscus_aromatica",
+        direccion: null,
+        web: null,
+        imagen: 'flor_hibiscus.png'
+    },
+     {
+        id: 27,
+        empresa: "Spring Summer",
+        servicio: "Bikinis, Enterizas y Pijamas que son tendencia.",
+        beneficio: "10% de descuento en tu compra",
+        telefono: null,
+        instagram: "spring_summer_5",
+        direccion: null,
+        web: null,
+        imagen: 'spring_summer.png'
     }
 ];
 const Convenio_page= () => {

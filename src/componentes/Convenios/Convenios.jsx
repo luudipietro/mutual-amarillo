@@ -127,7 +127,23 @@ const convenios = [
         id: 24,
         tittle: "Lomas Aberturas",
         imageUrl: 'lomas_aberturas_fix.png'
+    },
+     {
+        id: 28,
+        tittle: "Simplifica Tu Fiesta",
+        imageUrl: 'simplifica.png'
+    },
+     {
+        id: 26,
+        tittle: "Flor de Hibiscus - Aromatica",
+        imageUrl: 'flor_hibiscus.png'
+    },
+     {
+        id: 27,
+        tittle: "Spring Summer",
+        imageUrl: 'spring_summer.png'
     }
+
 ];
 
 
@@ -135,7 +151,7 @@ const Convenios = () => {
   return (
     <section className='convenios'>
 
-        <h3> Nuestros Convenios - <a href="https://socios.mutualsueñoamarillo.com"  target="_blank" rel="noopener noreferrer">Ver Todos los Beneficios</a></h3>
+        <h3> <a href="https://drive.google.com/file/d/1eIUZuA28p-poFapGz7Q4iU7I8aupnMKm/view?usp=sharing"  target="_blank" rel="noopener noreferrer">Ver Todos los Beneficios</a> - <a href=""  target="_blank" rel="noopener noreferrer">Como aprovechar los descuentos</a></h3>
         <div className='convenios__contenedor'>
             
             {convenios.map((element) => (
