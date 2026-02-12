@@ -1,6 +1,7 @@
 import React from 'react'
 import Convenio from '../Convenio/Convenio'
 import "./Convenios.css"
+import Marquee from 'react-fast-marquee';
 import { Link, NavLink } from 'react-router-dom'
 const convenios = [
     {
@@ -148,20 +149,75 @@ const convenios = [
 
 
 const Convenios = () => {
+
+    const half = Math.ceil(convenios.length/2)
+    const firstRow = convenios.slice(0, half)
+    const lastRow = convenios.slice(half)
+
+
+    const renderCard = (item) => (
+    <div className="convenio-card" key={item.id}>
+      <Link to={`${ruta_base}/${item.id}`}>
+        {item.imageUrl && (
+          <img 
+            src={`images/${item.imageUrl}`} 
+            alt={item.tittle} // Nota: usé 'tittle' porque así está en tu objeto, aunque debería ser 'title'
+            className={`convenio-image ${item.id === 25 ? 'black' : ''}`} 
+          />
+        )}
+      </Link>
+    </div>
+  );
+
+
   return (
     <section className='convenios'>
 
         <h3> <a href="https://drive.google.com/file/d/1eIUZuA28p-poFapGz7Q4iU7I8aupnMKm/view?usp=sharing"  target="_blank" rel="noopener noreferrer">Ver Todos los Beneficios</a> - <a href=""  target="_blank" rel="noopener noreferrer">Como aprovechar los descuentos</a></h3>
+        
+        
         <div className='convenios__contenedor'>
+
+            <div className='carousel-row'>
+                <Marquee gradient={true} gradientWidth={50} speed={60} pauseOnHover={true}>
+                    {firstRow.map((element) => (
+                    <Convenio
+                        key={element.id}
+                        id={element.id}
+                        title={element.id}
+                        imageUrl={element.imageUrl}
+                    
+                    />
+                    ))}
+
+                </Marquee>
+
+            </div>
             
-            {convenios.map((element) => (
+            <div className='carousel-row'>
+                <Marquee direction='right' gradient={true} gradientWidth={50} speed={60} pauseOnHover={true}>
+                    {lastRow.map((element) => (
+                    <Convenio
+                        key={element.id}
+                        id={element.id}
+                        title={element.id}
+                        imageUrl={element.imageUrl}
+                    
+                    />
+                    ))}
+
+                </Marquee>
+
+            </div>
+
+            {/* {convenios.map((element) => (
             <Convenio
                 key={element.id}
                 id={element.id}
                 title={element.tittle}
                 imageUrl={element.imageUrl}
             />
-            ))}
+            ))} */}
 
         </div>
 
