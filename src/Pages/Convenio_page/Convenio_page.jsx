@@ -112,7 +112,7 @@ const listaComercios = [
         telefono: 3815674981,
         instagram: "berro.artesanal",
         direccion: "Complejo 1300, ruta 9 kilometro 1300",
-        web: null,
+        web: "https://www.berro.com.ar/",
         imagen: 'logo_berro_fix.png'
     },
     {
