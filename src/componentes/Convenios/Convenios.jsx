@@ -190,7 +190,7 @@ const Convenios = () => {
   return (
     <section className='convenios'>
 
-        <h3> <a href="https://drive.google.com/file/d/1eIUZuA28p-poFapGz7Q4iU7I8aupnMKm/view?usp=sharing"  target="_blank" rel="noopener noreferrer">Ver Todos los Beneficios</a> - <a href=""  target="_blank" rel="noopener noreferrer">Como aprovechar los descuentos</a></h3>
+        <h3> <a href="https://drive.google.com/file/d/1eIUZuA28p-poFapGz7Q4iU7I8aupnMKm/view?usp=sharing"  target="_blank" rel="noopener noreferrer">Catálogo de Beneficios Completo</a> </h3>
         
         
         <div className='convenios__contenedor'>
