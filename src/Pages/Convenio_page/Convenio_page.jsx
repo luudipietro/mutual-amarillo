@@ -312,6 +312,58 @@ const listaComercios = [
         direccion: null,
         web: null,
         imagen: 'spring_summer.png'
+    },
+    {
+        id: 29,
+        empresa: "La Esquina Rosada Pintureria",
+        servicio: "Pinturas y soluciones para cada proyecto",
+        beneficio: "10% de descuento en tu compra",
+        telefono: 3815137040,
+        instagram: "laesquinarosada.pintureria",
+        direccion: 'Viamonte 1849',
+        web: null,
+        imagen: 'la_esquina_rosada.jpeg'
+    },{
+        id: 30,
+        empresa: "El Cristo Pintureria",
+        servicio: "Pintureria y Ferretería",
+        beneficio: "10% de descuento en tu compra",
+        telefono: 4238065,
+        instagram: null,
+        direccion: "Belgrano 3442",
+        web: null,
+        imagen: 'cristo_pintureria.jpeg'
+    },
+    {
+        id: 31,
+        empresa: "R18k Oro Tucuman",
+        servicio: "JoyeríaOro18k 100% Online",
+        beneficio: "15% de descuento en tu compra",
+        telefono: null,
+        instagram: "r18k.orotucuman",
+        direccion: null,
+        web: null,
+        imagen: 'r18k.png'
+    },{
+        id: 32,
+        empresa: "Odontóloga Belen Diaz Romero",
+        servicio: "Ortodoncia y Odontología en general",
+        beneficio: "descuento",
+        telefono: 3813631330,
+        instagram: "od.diazromero",
+        direccion: "Belgrano 4397 1er piso oficina 2",
+        web: null,
+        imagen: 'dentista_diaz_romero.jpeg'
+    },{
+        id: 33,
+        empresa: "Odontóloga Alejandrina Gimenez Moral",
+        servicio: "Ortodoncia y Odontología en general",
+        beneficio: "descuento",
+        telefono: null,
+        instagram: "gm_odonto",
+        direccion: "Belgrano 4397 1er piso oficina 2",
+        web: null,
+        imagen: 'dentista_alejandrina.jpeg'
     }
 ];
 const Convenio_page= () => {

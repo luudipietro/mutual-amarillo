@@ -1,12 +1,12 @@
 .convenio-image{
-    width: 200px ;
-    height: 200px;
+    width: 150px ;
+    height: 150px;
     
 }
 .black{
     background-color: black;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     border-radius: 45%;
 }
 
@@ -20,12 +20,12 @@
 
 @media(max-width: 900px){
     .convenio-image{
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
     }
     .black{
-        width: 100px;
-        height: 100px;
+        width: 85px;
+        height: 85px;
     }
 
 }
@@ -36,8 +36,8 @@
         height: 100px;
     }
     .black{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
 }   

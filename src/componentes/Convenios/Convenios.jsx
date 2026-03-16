@@ -23,6 +23,10 @@ const convenios = [
         id: 4,
         tittle: "Jockey Gym",
         imageUrl: 'jockey_gym_fix.png'
+    },        {
+        id: 19,
+        tittle: "Electrus",
+        imageUrl: 'electrus_fix.png',   
     },
     {
         id: 5,
@@ -39,6 +43,7 @@ const convenios = [
         tittle: "Julieta Penovi Interiorismo",
         imageUrl: 'juli_penovi_fix.png'
     },
+
     {
         id: 7,
         tittle: "Laboratorios Presti",
@@ -99,11 +104,7 @@ const convenios = [
         tittle: "Academia Ingresar",
         imageUrl: 'academia_ingresar_fix.png'
     },
-    {
-        id: 19,
-        tittle: "Electrus",
-        imageUrl: 'electrus_fix.png',   
-    },
+
     {
         id: 20,
         tittle: "Mix tecno",
@@ -143,6 +144,31 @@ const convenios = [
         id: 27,
         tittle: "Spring Summer",
         imageUrl: 'spring_summer.png'
+    },
+      {
+        id: 29,
+        tittle: "La Esquina Rosada Pintureria",
+        imageUrl: 'la_esquina_rosada.jpeg'
+    },
+      {
+        id: 30,
+        tittle: "El Cristo Pintureria",
+        imageUrl: 'cristo_pintureria.jpeg'
+    },
+      {
+        id: 31,
+        tittle: "R18k Oro Tucuman",
+        imageUrl: 'r18k.png'
+    },
+      {
+        id: 32,
+        tittle: "Odontóloga Belen Diaz Romero",
+        imageUrl: 'dentista_diaz_romero.jpeg'
+    },  
+    {
+        id: 33,
+        tittle: "Odontóloga Alejandrina Gimenez Moral",
+        imageUrl: 'dentista_alejandrina.jpeg'
     }
 
 ];
@@ -150,24 +176,15 @@ const convenios = [
 
 const Convenios = () => {
 
-    const half = Math.ceil(convenios.length/2)
-    const firstRow = convenios.slice(0, half)
-    const lastRow = convenios.slice(half)
+    const quarter = Math.ceil(convenios.length/4)
+    const conveniosAleatorios = [...convenios].sort(() => Math.random() - 0.5);
+    const firstRow = conveniosAleatorios.slice(0, quarter)
+    const secondRow = conveniosAleatorios.slice(quarter, quarter*2)
+    const thirdRow = conveniosAleatorios.slice(quarter*2, quarter*3)
+    const quarterRow = conveniosAleatorios.slice(quarter*3)
 
 
-    const renderCard = (item) => (
-    <div className="convenio-card" key={item.id}>
-      <Link to={`${ruta_base}/${item.id}`}>
-        {item.imageUrl && (
-          <img 
-            src={`images/${item.imageUrl}`} 
-            alt={item.tittle} // Nota: usé 'tittle' porque así está en tu objeto, aunque debería ser 'title'
-            className={`convenio-image ${item.id === 25 ? 'black' : ''}`} 
-          />
-        )}
-      </Link>
-    </div>
-  );
+
 
 
   return (
@@ -196,7 +213,37 @@ const Convenios = () => {
             
             <div className='carousel-row'>
                 <Marquee direction='right' gradient={true} gradientWidth={50} speed={60} pauseOnHover={true}>
-                    {lastRow.map((element) => (
+                    {secondRow.map((element) => (
+                    <Convenio
+                        key={element.id}
+                        id={element.id}
+                        title={element.id}
+                        imageUrl={element.imageUrl}
+                    
+                    />
+                    ))}
+
+                </Marquee>
+
+            </div>
+            <div className='carousel-row'>
+                <Marquee gradient={true} gradientWidth={50} speed={60} pauseOnHover={true}>
+                    {thirdRow.map((element) => (
+                    <Convenio
+                        key={element.id}
+                        id={element.id}
+                        title={element.id}
+                        imageUrl={element.imageUrl}
+                    
+                    />
+                    ))}
+
+                </Marquee>
+
+            </div>
+            <div className='carousel-row'>
+                <Marquee direction='right' gradient={true} gradientWidth={50} speed={60} pauseOnHover={true}>
+                    {quarterRow.map((element) => (
                     <Convenio
                         key={element.id}
                         id={element.id}
