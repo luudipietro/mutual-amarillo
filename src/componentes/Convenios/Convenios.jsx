@@ -169,7 +169,13 @@ const convenios = [
         id: 33,
         tittle: "Odontóloga Alejandrina Gimenez Moral",
         imageUrl: 'dentista_alejandrina.jpeg'
+    },
+      {
+        id: 34,
+        tittle: "Las Parrillas Resto delivery",
+        imageUrl: 'las_parrillas.jpeg'
     }
+     
 
 ];
 

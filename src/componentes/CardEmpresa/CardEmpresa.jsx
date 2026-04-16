@@ -35,12 +35,18 @@ const TarjetaComercio = ({
       <p className='service'>{servicio}</p>
 
       <div className='benefitBox'>
-        <strong>Si formas parte de la Mutual Sueño Amarillo:</strong> {beneficio}
+        <strong>Si formas parte de la Mutual Sueño Amarillo: </strong> <span dangerouslySetInnerHTML={{ __html: beneficio }} />
       </div>
 
       <div className='contactSection'>
         {direccion && <div><i className="bi bi-pin-map-fill"></i> {direccion}</div>}
-        {telefono && <div><i className="bi bi-whatsapp"></i> {telefono}</div>}
+        {telefono && (<div>
+          <a href={`https://wa.me/${telefono}`} target="_blank" rel="noreferrer" className='link'>
+          <i className="bi bi-whatsapp"></i> 
+          {telefono}
+          </a>
+          </div>
+          )}
         
         {instagram && (
           <div>

@@ -364,6 +364,17 @@ const listaComercios = [
         direccion: "Belgrano 4397 1er piso oficina 2",
         web: null,
         imagen: 'dentista_alejandrina.jpeg'
+    },
+       {
+        id: 34,
+        empresa: "Las Parrillas ",
+        servicio: "Resto delivery",
+        beneficio: "Descuentos: </br>•​ Efectivo/Transferencia: 20% (Lun-Jue) / 15% (Vie-Dom) </br>•​ Tarjetas de Débito/Crédito (1 pago): 10% (Lun-Jue) / 5% (Vie-Dom). </br>(Dcto no aplicable ni acumulable en menú del día o en promociones)",
+        telefono: 3815302611,
+        instagram: null,
+        direccion: "Belgrano 3303",
+        web: null,
+        imagen: 'las_parrillas.jpeg'
     }
 ];
 const Convenio_page= () => {
